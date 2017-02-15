@@ -1,0 +1,25 @@
+{
+  "name": "file-metadata-microservice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://nateinaction@github.com/nateinaction/file-metadata-microservice.git",
+  "author": "Nate Gay <nate@ohnate.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node ./src/index.js",
+    "build": "babel src --out-file index.js"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-preset-latest": "^6.22.0"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "multer": "^1.3.0"
+  }
+}
